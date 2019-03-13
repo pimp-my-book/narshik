@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <NavigationBar/>
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -7,6 +8,18 @@
     <router-view/>
   </div>
 </template>
+
+<script>
+import NavigationBar from './components/Navigation/NavigationBar'
+
+export default {
+  name: 'App',
+  components: {
+    NavigationBar
+  }
+}
+</script>
+
 
 <style>
 
@@ -18,6 +31,6 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+
 }
 </style>
