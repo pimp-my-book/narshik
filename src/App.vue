@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <NavigationBar/>
+    <SideNavBar/>
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -11,11 +12,13 @@
 
 <script>
 import NavigationBar from './components/Navigation/NavigationBar'
+import SideNavBar from './components/Navigation/SideNavBar'
 
 export default {
   name: 'App',
   components: {
-    NavigationBar
+    NavigationBar,
+    SideNavBar
   }
 }
 </script>
