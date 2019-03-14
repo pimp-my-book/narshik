@@ -1,11 +1,11 @@
 {
   "name": "goa-design-system",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build-bundle": "vue-cli-service build --target lib --name goa .src/components/index.js",
+    "build-bundle": "vue-cli-service build --target lib --name goa ./src/components/index.js",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit"
   },
