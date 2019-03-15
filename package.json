@@ -15,6 +15,7 @@
     "vue-router": "^3.0.1"
   },
   "main": "./dist/goa.common.js",
+  "style": "dist/goa.css",
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.5.0",
     "@vue/cli-plugin-eslint": "^3.5.0",
