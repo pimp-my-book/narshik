@@ -16,7 +16,6 @@
   "main": "./dist/goa.common.js",
   "style": "dist/goa.css",
   "devDependencies": {
-    "@babel/core": "^7.6.0",
     "@storybook/vue": "^5.1.11",
     "@vue/cli-plugin-babel": "^3.5.0",
     "@vue/cli-plugin-eslint": "^3.5.0",
