@@ -1,10 +1,23 @@
-const path = require("path");
+const path = require('path');
 
-module.exports = (baseConfig, env, defaultConfig) => {
-    defaultConfig.resolve.alias = {
-        ...defaultConfig.resolve.alias,
-        "@": path.resolve(__dirname, "../src"),
+// load the default config generator.
+const genDefaultConfig = require('@storybook/vue/dist/server/config/defaults/webpack.config.js');
+
+module.exports = (baseConfig, env) => {
+    const config = genDefaultConfig(baseConfig, env);
+
+    // Extend it as you need.
+    function resolve(dir) {
+        return path.join(__dirname, '..', dir);
+    }
+
+    config.resolve = {
+        extensions: ['.js', '.vue', '.json'],
+        alias: {
+            vue$: 'vue/dist/vue.esm.js',
+            '@': resolve('src'),
+        },
     };
 
-    return defaultConfig;
+    return config;
 };
