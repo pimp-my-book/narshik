@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name narshik ./src/index.js",
     "lint": "vue-cli-service lint",
     "storybook": "start-storybook"
   },
@@ -12,6 +12,9 @@
     "core-js": "^2.6.5",
     "vue": "^2.6.10"
   },
+  "files": [
+    "dist/*.{js,css}"
+  ],
   "devDependencies": {
     "@babel/core": "^7.6.0",
     "@storybook/vue": "^5.1.11",
