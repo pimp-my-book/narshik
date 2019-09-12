@@ -13,7 +13,10 @@
     "vue": "^2.6.10"
   },
   "files": [
-    "dist/*.{js,css}"
+    "dist/*.{js,css}",
+    "src/*",
+    "public/*",
+    "*.js"
   ],
   "devDependencies": {
     "@babel/core": "^7.6.0",
