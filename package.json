@@ -2,20 +2,12 @@
   "name": "narshik",
   "version": "0.1.4",
   "private": false,
-  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name narshik ./src/index.js",
     "lint": "vue-cli-service lint",
-    "storybook": "start-storybook"
-  },
-  "dependencies": {
-    "core-js": "^2.6.5",
-    "vue": "^2.6.10"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/pimp-my-book/narshik.git"
+    "storybook": "start-storybook",
+    "test:unit": "vue-cli-service test:unit"
   },
   "main": "./dist/narshik.common.js",
   "files": [
@@ -24,13 +16,21 @@
     "public/*",
     "*.js"
   ],
+  "dependencies": {
+    "core-js": "^2.6.5",
+    "vue": "^2.6.10"
+  },
   "devDependencies": {
     "@babel/core": "^7.6.0",
     "@storybook/vue": "^5.1.11",
     "@vue/cli-plugin-babel": "^3.11.0",
     "@vue/cli-plugin-eslint": "^3.11.0",
+    "@vue/cli-plugin-unit-jest": "^3.11.0",
     "@vue/cli-service": "^3.11.0",
+    "@vue/test-utils": "1.0.0-beta.29",
+    "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.6",
     "babel-preset-vue": "^2.0.2",
     "eslint": "^5.16.0",
@@ -50,7 +50,17 @@
     "rules": {},
     "parserOptions": {
       "parser": "babel-eslint"
-    }
+    },
+    "overrides": [
+      {
+        "files": [
+          "**/__tests__/*.{j,t}s?(x)"
+        ],
+        "env": {
+          "jest": true
+        }
+      }
+    ]
   },
   "postcss": {
     "plugins": {
@@ -60,5 +70,10 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pimp-my-book/narshik.git"
+  }
 }
