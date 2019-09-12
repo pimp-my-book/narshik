@@ -3,7 +3,7 @@
 </template>
 <script>
 export default {
-  name: "HeadingOne",
+  name: 'HeadingOne',
   props: {
     text: String
   }

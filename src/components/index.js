@@ -1,5 +1,5 @@
 import HeadingOne from './HeadingOne.vue'
 
-export {
+export const Components = {
     HeadingOne
 }
