@@ -1,10 +1,10 @@
 {
   "name": "narshik",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.4",
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name narshik ./src/index.js",
     "lint": "vue-cli-service lint",
     "storybook": "start-storybook"
   },
@@ -12,6 +12,13 @@
     "core-js": "^2.6.5",
     "vue": "^2.6.10"
   },
+  "main": "./dist/narshik.common.js",
+  "files": [
+    "dist/*.{js,css}",
+    "src/*",
+    "public/*",
+    "*.js"
+  ],
   "devDependencies": {
     "@babel/core": "^7.6.0",
     "@storybook/vue": "^5.1.11",
