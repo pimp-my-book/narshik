@@ -95,6 +95,10 @@ module.exports = {
       'x': '1024px',
       'lapie': [{ 'min': '1280px', 'max': '1366px' }],
       'xl': [{ 'min': '1500px' }],
+    },
+    fonts: {
+      'display': ['Paytone One'],
+      'body': ['Poppins']
     }
   },
   variants: {},
