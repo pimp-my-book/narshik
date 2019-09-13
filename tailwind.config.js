@@ -353,5 +353,21 @@ module.exports = {
     wordBreak: ['responsive'],
     zIndex: ['responsive'],
   },
-  plugins: []
+  plugins: [
+    function ({ addComponents }) {
+      const border = {
+        ".border-top": {
+          borderTop: "#4ECA5D  8px solid"
+        }
+      };
+      const borderBottom = {
+        ".border-bottom": {
+          borderBottom: '#4ECA5D  8px solid'
+        }
+      };
+
+      addComponents(borderBottom);
+      addComponents(border);
+    }
+  ]
 }
