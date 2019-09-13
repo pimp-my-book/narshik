@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import '@/assets/tailwind.css'
 import HeadingOne from './components/HeadingOne.vue'
 
 

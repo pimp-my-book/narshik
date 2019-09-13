@@ -1,5 +1,7 @@
 <template>
-  <p>{{text}}</p>
+  <p
+  class="text-green-500"
+  >{{text}}</p>
 </template>
 <script>
 export default {
