@@ -1,7 +1,10 @@
 <template>
-  <p class="heading">{{text}}</p>
+  <p class="text-green">{{text}}</p>
 </template>
 <script>
+import THeadingOne from "../themes/THeadingOne";
+
+const { baseClass } = THeadingOne;
 export default {
   name: "HeadingOne",
   props: {
@@ -9,8 +12,3 @@ export default {
   }
 };
 </script>
-<style lang="postcss">
-.heading {
-  @apply text-green;
-}
-</style>

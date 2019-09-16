@@ -1,5 +1,5 @@
 const THeadingOne = {
-    BaseClass: ' text-green'
+    baseClass: ' text-green bg-green-dark'
 }
 
 export default THeadingOne
