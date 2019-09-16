@@ -1,5 +1,5 @@
 <template>
-  <p class="text-green-500">{{text}}</p>
+  <p class="heading">{{text}}</p>
 </template>
 <script>
 export default {
@@ -9,6 +9,8 @@ export default {
   }
 };
 </script>
-<style scoped>
-@import "../assets/tailwind.css";
+<style lang="postcss">
+.heading {
+  @apply text-green;
+}
 </style>
