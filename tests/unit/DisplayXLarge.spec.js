@@ -1,5 +1,5 @@
 import { render, fireEvent, cleanup } from '@testing-library/vue'
-import DisplayXLarge from '../../src/components/DisplayXLarge.vue'
+import DisplayXLarge from '../../src/components/typography/DisplayXLarge.vue'
 
 afterEach(cleanup)
 
