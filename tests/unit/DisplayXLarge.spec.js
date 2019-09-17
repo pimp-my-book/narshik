@@ -1,12 +1,12 @@
 import { render, fireEvent, cleanup } from '@testing-library/vue'
-import HeadingOne from '../../src/components/HeadingOne.vue'
+import DisplayXLarge from '../../src/components/typography/DisplayXLarge.vue'
 
 afterEach(cleanup)
 
 test('Renders the text prop', () => {
 
     const text = 'Stab me'
-    const { getByText } = render(HeadingOne, {
+    const { getByText } = render(DisplayXLarge, {
         props: { text: text }
     }
     )

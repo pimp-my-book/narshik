@@ -1,14 +1,14 @@
 <template>
-  <p class="text-green">{{text}}</p>
+  <p class="text-5xl font-display">{{text}}</p>
 </template>
 <script>
 export default {
-  name: "HeadingOne",
+  name: "DisplayXLarge",
   props: {
     text: String
   }
 };
 </script>
 <style>
-@import "../assets/tailwind.css";
+@import "../../assets/tailwind.css";
 </style>
