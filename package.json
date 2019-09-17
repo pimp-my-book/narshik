@@ -1,6 +1,6 @@
 {
   "name": "narshik",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -10,6 +10,7 @@
     "test": "vue-cli-service test:unit"
   },
   "main": "./dist/narshik.common.js",
+  "style": "./dist/narshik.css",
   "files": [
     "dist/*.{js,css}",
     "src/*",
