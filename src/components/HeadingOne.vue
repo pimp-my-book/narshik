@@ -1,11 +1,14 @@
 <template>
-  <p>{{text}}</p>
+  <p class="text-green">{{text}}</p>
 </template>
 <script>
 export default {
-  name: 'HeadingOne',
+  name: "HeadingOne",
   props: {
     text: String
   }
 };
 </script>
+<style>
+@import "../assets/tailwind.css";
+</style>
