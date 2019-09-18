@@ -7,7 +7,7 @@ describe('<Input/>', () => {
     test('Accepts text prop', () => {
 
         const { getByText, getByLabelText, getByDisplayValue } = render(
-            <Input />
+            Input
         )
 
         fireEvent.input(getByLabelText('input field'), { target: { value: 'Bonobo' } })
