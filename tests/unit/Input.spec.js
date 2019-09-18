@@ -6,5 +6,11 @@ afterEach(cleanup)
 describe('<Input/>', () => {
     test('Accepts text prop', () => {
 
+        const { getByText, getByLabelText, getByDisplayValue } = render(
+            <Input />
+        )
+
+        fireEvent.input(getByLabelText('input field'), { target: { value: 'Bonobo' } })
+        expect(getByDisplayValue('Bonobo'))
     })
 })
