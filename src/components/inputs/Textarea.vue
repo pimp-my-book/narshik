@@ -1,12 +1,25 @@
 <template>
   <textarea
-    class="bg-grey-lighter rounded-px focus:outline-none focus:bg-white border-gray-500"
+    class="bg-grey-lighter py-10 px-10 rounded-px focus:outline-none focus:bg-white border-gray-500"
     type="text"
   />
 </template>
 <script>
 export default {
-  name: "Textarea"
+  name: "Textarea",
+  props: {
+    placeholder: String
+  },
+  data() {
+    return {
+      value: ""
+    };
+  },
+  methods: {
+    handleInput(e) {
+      this.$emit("input", e.target.value);
+    }
+  }
 };
 </script>
 <style>
