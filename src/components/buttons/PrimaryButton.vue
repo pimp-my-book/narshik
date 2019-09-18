@@ -17,7 +17,7 @@ forward - redirects using the url prop
     : 'bg-green   hover:text-green-dark hover:bg-green-lighter font-body py-4 px-6 sl:py-4 sl:px-6 s:py-2 s:px-2 text-white rounded focus:outline-none ']"
   >
     <div v-if="isLoading">
-      <img src="../../assets/loader.svg" />
+      <img class="spinner" src="../../assets/loader.svg" />
     </div>
     <div v-else>{{text}}</div>
   </button>
@@ -45,4 +45,18 @@ export default {
 </script>
 <style>
 @import "../../assets/tailwind.css";
+
+.spinner {
+  display: inline-block;
+  animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 </style>
