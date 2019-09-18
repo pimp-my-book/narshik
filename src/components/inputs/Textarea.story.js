@@ -6,6 +6,6 @@ storiesOf('Textarea', module)
     .add('Basic Example', () => {
         return {
             components: { Textarea },
-            template: '<Textarea />'
+            template: '<Textarea placeholder="I am no different from the presist"/>'
         }
     })
