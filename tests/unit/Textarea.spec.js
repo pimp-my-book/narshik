@@ -5,6 +5,9 @@ afterEach(cleanup)
 
 describe('<Textarea/>', () => {
     test('Accepts text input', () => {
+        const { getByDisplayValue, getByLabelText } = render(Textarea)
 
+        fireEvent.input(getByLabelText('textarea field'), { target: { value: 'I am outside' } })
+        expect(getByDisplayValue('I am outside'))
     })
 })
