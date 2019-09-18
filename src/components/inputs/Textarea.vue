@@ -2,6 +2,9 @@
   <textarea
     class="bg-grey-lighter py-10 px-10 rounded-px focus:outline-none focus:bg-white border-gray-500"
     type="text"
+    :placeholder="placeholder"
+    aria-label="textarea field"
+    @input="handleInput"
   />
 </template>
 <script>
