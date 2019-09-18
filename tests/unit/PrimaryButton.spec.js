@@ -8,7 +8,9 @@ describe('<PrimaryButton/>', () => {
     test('It accepts button text prop', () => {
 
         const text = 'Take ya head off'
-        const { getByText, getByDisplayValue, findByText } = render(PrimaryButton)
+        const { getByText, getByDisplayValue, findByText } = render(PrimaryButton, {
+            props: { text: text }
+        })
 
         expect(getByText(text))
     })
