@@ -8,7 +8,7 @@ describe('<PrimaryButton/>', () => {
     test('It accepts button text prop', () => {
 
         const text = 'Take ya head off'
-        const { getByText } = render(PrimaryButton)
+        const { getByText, getByDisplayValue, findByText } = render(PrimaryButton)
 
         expect(getByText(text))
     })
@@ -19,5 +19,10 @@ describe('<PrimaryButton/>', () => {
 
     test('Shows loading state', () => {
 
+        const { getByLabelText } = render(PrimaryButton, {
+            props: { isLoading: true }
+        })
+
+        expect(getByLabelText('loading-spinner'))
     })
 })
