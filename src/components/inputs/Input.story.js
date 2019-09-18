@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/vue'
 import Input from './Input.vue'
 
 storiesOf('Input', module)
-    .add('Basicm Example', () => {
+    .add('Basic Example', () => {
         return {
             components: { Input },
             template: '<Input placeholder="Type in me"/>'
