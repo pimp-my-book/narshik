@@ -17,6 +17,13 @@ describe('<PrimaryButton/>', () => {
 
     test.skip('It forwards the supplied url', () => {
 
+        const url = '/stripped'
+        const text = 'Lets go'
+        const { getByLabelText } = render(PrimaryButton, {
+            props: { text: text, url: url }
+        })
+
+        expect(fireEvent.click(getByLabelText('primary-button'))).toHaveTextContent(url)
     })
 
     test('Shows loading state', () => {
