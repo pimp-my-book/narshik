@@ -15,7 +15,7 @@ describe('<PrimaryButton/>', () => {
         expect(getByText(text))
     })
 
-    test.skip('It forwards the supplied url', () => {
+    test('It forwards the supplied url', () => {
 
         const url = '/stripped'
         const text = 'Lets go'

@@ -36,7 +36,7 @@ export default {
   methods: {
     forward() {
       if (this.url) {
-        this.$router.push(this.url);
+        window.location.href = this.url;
       } else {
         null;
       }

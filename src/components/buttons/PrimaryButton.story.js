@@ -21,3 +21,9 @@ storiesOf('PrimaryButton', module)
             template: '<PrimaryButton isLoading text="Click me"/>'
         }
     })
+    .add('With A URL', () => {
+        return {
+            components: { PrimaryButton },
+            template: '<PrimaryButton url="/about" text="Click me"/>'
+        }
+    })
