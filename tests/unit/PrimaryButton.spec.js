@@ -7,9 +7,13 @@ afterEach(cleanup)
 describe('<PrimaryButton/>', () => {
     test('It accepts button text prop', () => {
 
+        const text = 'Take ya head off'
+        const { getByText } = render(PrimaryButton)
+
+        expect(getByText(text))
     })
 
-    test('It forwards the supplied url', () => {
+    test.skip('It forwards the supplied url', () => {
 
     })
 })
