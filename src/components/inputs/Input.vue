@@ -10,6 +10,7 @@
     focus:bg-white"
     type="text"
     :placeholder="placeholder"
+    aria-label="input field"
     @input="handleInput"
     />
 </template>
