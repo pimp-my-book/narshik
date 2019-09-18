@@ -15,3 +15,9 @@ storiesOf('PrimaryButton', module)
             template: '<PrimaryButton regular text="Click me"/>'
         }
     })
+    .add('Laoding', () => {
+        return {
+            components: { PrimaryButton },
+            template: '<PrimaryButton isLoading text="Click me"/>'
+        }
+    })
