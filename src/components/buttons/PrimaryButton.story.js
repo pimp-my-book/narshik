@@ -3,9 +3,15 @@ import { storiesOf } from '@storybook/vue'
 import PrimaryButton from './PrimaryButton.vue'
 
 storiesOf('PrimaryButton', module)
-    .add('Basic Example', () => {
+    .add('Large', () => {
         return {
             components: { PrimaryButton },
             template: '<PrimaryButton text="Click me"/>'
+        }
+    })
+    .add('Regular', () => {
+        return {
+            components: { PrimaryButton },
+            template: '<PrimaryButton regular text="Click me"/>'
         }
     })
