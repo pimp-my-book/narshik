@@ -16,4 +16,8 @@ describe('<PrimaryButton/>', () => {
     test.skip('It forwards the supplied url', () => {
 
     })
+
+    test('Shows loading state', () => {
+
+    })
 })
