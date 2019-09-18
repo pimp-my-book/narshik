@@ -10,6 +10,7 @@ forward - redirects using the url prop
 
 <template>
   <button
+    aria-label="primary-button"
     type="submit"
     url
     @click="forward"
@@ -17,7 +18,7 @@ forward - redirects using the url prop
     : 'bg-green   hover:text-green-dark hover:bg-green-lighter font-body py-4 px-6 sl:py-4 sl:px-6 s:py-2 s:px-2 text-white rounded focus:outline-none ']"
   >
     <div v-if="isLoading">
-      <img class="spinner" src="../../assets/loader.svg" />
+      <img aria-label="loading-spinner" class="spinner" src="../../assets/loader.svg" />
     </div>
     <div v-else>{{text}}</div>
   </button>
