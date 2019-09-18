@@ -28,7 +28,11 @@ export default {
   },
   methods: {
     forward() {
-      this.$router.push(this.url);
+      if (this.url) {
+        this.$router.push(this.url);
+      } else {
+        null;
+      }
     }
   }
 };
