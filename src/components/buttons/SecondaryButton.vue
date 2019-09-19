@@ -39,7 +39,6 @@ export default {
 .spinner {
   display: inline-block;
   animation: rotate 2s infinite linear;
-  fill: aquamarine;
 }
 
 @keyframes rotate {
