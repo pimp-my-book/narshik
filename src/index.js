@@ -6,6 +6,8 @@ import DisplaySmall from './components/typogrpahy/DisplaySmall.vue'
 import FeatureText from './components/typogrpahy/FeatureText.vue'
 import Input from './components/inputs/Input.vue'
 import Textarea from './components/inputs/Textarea.vue'
+import PrimaryButton from './components/buttons/PrimaryButton.vue'
+import SecondaryButton from './components/buttons/SecondaryButton.vue'
 
 const Components = {
     DisplayXLarge,
@@ -13,7 +15,9 @@ const Components = {
     DisplaySmall,
     FeatureText,
     Input,
-    Textarea
+    Textarea,
+    SecondaryButton,
+    PrimaryButton
 }
 Object.keys(Components).forEach(name => {
     Vue.component(name, Components[name])
