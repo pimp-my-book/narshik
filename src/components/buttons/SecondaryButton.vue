@@ -8,7 +8,7 @@
     : ' hover:text-green-darker  hover:bg-transparent bg-green-lighter font-body lg:py-4 lg:px-6 sm:py-4 sm:px-6 border border-transparent hover:border-green hover:text-green  s:py-2 s:px-2 text-green-dark rounded focus:outline-none']"
   >
     <div v-if="isLoading">
-      <img aria-label="loading-spinner" class="spinner" src="../../assets/loader.svg" />
+      <img aria-label="loading-spinner" class="spinner" src="../../assets/loader_green.svg" />
     </div>
     <div v-else>{{text}}</div>
   </button>
