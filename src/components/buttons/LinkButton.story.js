@@ -6,6 +6,6 @@ storiesOf('Link Button', module)
     .add('Basic Example', () => {
         return {
             components: { LinkButton },
-            template: '<LinkButton text="Click me" url="/interstella"/>'
+            template: '<LinkButton textColor="text-black" text="Click me" href="/interstella"/>'
         }
     })

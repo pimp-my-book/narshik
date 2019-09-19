@@ -1,6 +1,6 @@
 <template>
-  <p :class="textColor" class="font-body mr-4 hover:text-green">
-    <a :href="href" class="no-underline text-white hover:text-green">{{text}}</a>
+  <p class="font-body mr-4 hover:text-green">
+    <a :href="href" :class="textColor" class="no-underline hover:text-green">{{text}}</a>
   </p>
 </template>
 <script>
