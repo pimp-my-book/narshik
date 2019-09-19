@@ -17,7 +17,11 @@ export default {
   },
   methods: {
     forward() {
-      this.$router.push(this.url);
+      if (this.url) {
+        window.location.href = this.url;
+      } else {
+        null;
+      }
     }
   }
 };
