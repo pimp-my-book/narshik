@@ -1,6 +1,7 @@
 <template>
   <button
     type="submit"
+    aria-label="secondary-button"
     @click="forward"
     :class="[regular 
     ? ' hover:text-green-darker hover:bg-transparent bg-green-lighter font-body py-2 px-4 text-green-darker rounded border border-green hover:border-green hover:text-green focus:outline-none' 
