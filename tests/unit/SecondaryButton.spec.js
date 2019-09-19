@@ -14,6 +14,10 @@ describe('<SecondaryButton/>', () => {
     })
 
     test('Shows loading state', () => {
+        const { getByLabelText } = render(SecondaryButton, {
+            props: { isLoading: true }
+        })
 
+        expect(getByLabelText('loading-spinner'))
     })
 })
