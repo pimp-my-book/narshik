@@ -5,7 +5,12 @@ afterEach(cleanup)
 
 describe('<SecondaryButton/>', () => {
     test('It accepts button text prop', () => {
+        const text = 'Thanks I have received it'
+        const { getByText } = render(SecondaryButton, {
+            props: { text: text }
+        })
 
+        expect(getByText(text))
     })
 
     test('Shows loading state', () => {
