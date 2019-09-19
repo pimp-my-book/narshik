@@ -26,3 +26,20 @@ export default {
   }
 };
 </script>
+<style>
+@import "../../assets/tailwind.css";
+
+.spinner {
+  display: inline-block;
+  animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+</style>
