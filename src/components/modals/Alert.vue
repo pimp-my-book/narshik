@@ -13,6 +13,16 @@ export default {
   name: "Alert",
   props: {
     message: String
+  },
+  data: () => {
+    return {
+      open: false
+    };
+  },
+  methods: {
+    toggle() {
+      this.open = !this.open;
+    }
   }
 };
 </script>
