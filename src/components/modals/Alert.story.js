@@ -18,6 +18,6 @@ storiesOf('Alert', module)
     .add('Error', () => {
         return {
             components: { Alert },
-            template: '<Alert  message="Watch out for turn two"/>'
+            template: '<Alert failure message="Watch out for turn two"/>'
         }
     })
