@@ -1,11 +1,16 @@
 <template>
-  <div class="p-2 w-350 h-10 rounded-px bg-green flex flex-row relative">{{message}}</div>
+  <div class="p-2 w-350 h-10 rounded-px bg-green flex flex-row relative">
+    <div>
+      <span role="img" aria-label="error emoji">🚨</span>
+    </div>
+    {{message}}
+  </div>
 </template>
 <script>
 export default {
   name: "Alert",
   props: {
-    mesaage: String
+    message: String
   }
 };
 </script>
