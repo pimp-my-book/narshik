@@ -9,6 +9,7 @@ import Textarea from './components/inputs/Textarea.vue'
 import PrimaryButton from './components/buttons/PrimaryButton.vue'
 import SecondaryButton from './components/buttons/SecondaryButton.vue'
 import LinkButton from './components/buttons/LinkButton.vue'
+import SmallCard from './components/cards/SmallCard.vue'
 
 const Components = {
     DisplayXLarge,
@@ -19,7 +20,8 @@ const Components = {
     Textarea,
     SecondaryButton,
     PrimaryButton,
-    LinkButton
+    LinkButton,
+    SmallCard
 }
 Object.keys(Components).forEach(name => {
     Vue.component(name, Components[name])
