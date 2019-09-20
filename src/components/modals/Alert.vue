@@ -21,7 +21,10 @@
 export default {
   name: "Alert",
   props: {
-    message: String
+    message: String,
+    success: Boolean,
+    failure: Boolean,
+    warning: Boolean
   },
   data: () => {
     return {
