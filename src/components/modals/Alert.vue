@@ -1,9 +1,12 @@
 <template>
-  <div></div>
+  <div class="p-2 w-350 h-10 rounded-px bg-green flex flex-row relative">{{message}}</div>
 </template>
 <script>
 export default {
-  name: "Alert"
+  name: "Alert",
+  props: {
+    mesaage: String
+  }
 };
 </script>
 
