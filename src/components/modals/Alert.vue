@@ -4,7 +4,7 @@
       <span role="img" aria-label="error emoji">🚨</span>
     </div>
 
-    <p aria-label="alert message" class="font-body">{message}</p>
+    <p aria-label="alert message" class="font-body">{{message}}</p>
     <span aria-label="close button" class="right-0 top-0 absolute mr-2 cursor-pointer">&times;</span>
   </div>
 </template>
