@@ -6,10 +6,10 @@
         class="p-2 w-350 h-10 rounded-px flex flex-row relative"
       >
         <div>
-          <span role="img" aria-label="error emoji">
-            <div v-if="success">🎉</div>
-            <div v-if="warning">🚧</div>
-            <div v-else>🚨</div>
+          <span role="img" aria-label=" emojis">
+            <div aria-label="succes emojis" v-if="success">🎉</div>
+            <div aria-label="warning emojis" v-if="warning">🚧</div>
+            <div aria-label="error  emojis" v-else>🚨</div>
           </span>
         </div>
 
