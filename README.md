@@ -4,7 +4,7 @@
 
 This is a Vue component library based off of the Design System for [GOA](https://gogoa.co.za), Pimp My Book's bursary management app. 
 
-The Design System can can be view on [Figma](https://www.figma.com/file/KedEPuWZk0CXWWNAEf806cOZ/GOA?node-id=0%3A1)
+The Design System can be viewed on [Figma](https://www.figma.com/file/KedEPuWZk0CXWWNAEf806cOZ/GOA?node-id=0%3A1).
 
 ### 🎉 Features 
 
