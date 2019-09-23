@@ -16,6 +16,7 @@ describe('<Alert/>', () => {
         const toggle = jest.fn()
         const message = 'Help me understand'
         const { getByLabelText } = render(Alert, {
+            on: { click: toggle },
             props: {
                 message: message
             }
