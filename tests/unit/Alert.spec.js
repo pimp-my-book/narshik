@@ -6,11 +6,22 @@ afterEach(cleanup)
 describe('<Alert/>', () => {
     test('Renders the alert message', () => {
         const message = 'Can you help me?'
-        const { queryByText } = render(Alert)
+        const { queryByText } = render(Alert, {
+            props: { message: message }
+        })
         expect(queryByText(message))
     })
 
     test('Can close the alert', () => {
+        const toggle = jest.fn()
+        const message = 'Help me understand'
+        const { getByLabelText } = render(Alert, {
+            props: {
+                message: message
+            }
+        })
 
+        fireEvent.click(getByLabelText('close button'))
+        expect(toggle).toHaveBeenCalledTimes(1)
     })
 })
