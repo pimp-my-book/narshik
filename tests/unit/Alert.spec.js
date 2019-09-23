@@ -15,14 +15,14 @@ describe('<Alert/>', () => {
     test('Can close the alert', () => {
         const toggle = jest.fn()
         const message = 'Help me understand'
-        const { getByLabelText, getByText, emitted } = render(Alert, {
-            on: { toggle: toggle },
+        const { getByLabelText } = render(Alert, {
+            methods: { toggle: toggle },
             props: {
                 message: message
             }
         })
 
         fireEvent.click(getByLabelText('close button'))
-        expect(emitted()).toHaveProperty('click')
+        expect(toggle).toHaveBeenCalled()
     })
 })
