@@ -1,9 +1,9 @@
 import Vue from 'vue'
 require('./assets/tailwind.css')
-import DisplayXLarge from './components/typograpahy/DisplayXLarge.vue'
-import DisplayLarge from './components/typograpahy/DisplayLarge.vue'
-import DisplaySmall from './components/typograpahy/DisplaySmall.vue'
-import FeatureText from './components/typograpahy/FeatureText.vue'
+import DisplayXLarge from './components/typography/DisplayXLarge.vue'
+import DisplayLarge from './components/typography/DisplayLarge.vue'
+import DisplaySmall from './components/typography/DisplaySmall.vue'
+import FeatureText from './components/typography/FeatureText.vue'
 import Input from './components/inputs/Input.vue'
 import Textarea from './components/inputs/Textarea.vue'
 import PrimaryButton from './components/buttons/PrimaryButton.vue'
