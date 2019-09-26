@@ -29,9 +29,18 @@ export default {
       }
     }
   },
+  watch: {
+    value(value) {
+      this.newValue = value;
+    }
+  },
   methods: {
     handleInput(e) {
-      this.$emit("input", e.target.value);
+      this.$nextTick(() => {
+        if (event.target) {
+          this.computedValue = event.target.value;
+        }
+      });
     }
   }
 };
