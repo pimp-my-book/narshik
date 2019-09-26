@@ -3,6 +3,7 @@
     class="bg-grey-lighter rounded-px py-2 px-4 border-gray-500 focus:outline-none focus:bg-white"
     type="text"
     :placeholder="placeholder"
+    :value="computedValue"
     aria-label="input field"
     @input="handleInput"
   />
