@@ -32,7 +32,7 @@ storiesOf('PrimaryButton', module)
     .add('Form example', () => {
         return {
             components: { PrimaryButton, Input },
-            template: '<div><PrimaryButton text="Click me"/><Input/></div>',
+            template: '<div><PrimaryButton @click="handleSubmit" text="Click me"/><Input v-model="text"/></div>',
             data() {
                 return {
                     text: ""
