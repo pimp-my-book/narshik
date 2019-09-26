@@ -38,8 +38,8 @@ export default {
   methods: {
     handleInput(e) {
       this.$nextTick(() => {
-        if (event.target) {
-          this.computedValue = event.target.value;
+        if (e.target) {
+          this.computedValue = e.target.value;
         }
       });
     }
