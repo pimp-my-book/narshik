@@ -14,7 +14,6 @@ forward - redirects using the url prop
     type="submit"
     url
     @click="$emit('click',$event)"
-
     :class="[regular ? ' bg-green hover:text-green-dark hover:bg-green-lighter font-body py-2 px-4  text-white rounded focus:bg-green-lighter focus:outline-none' 
     : 'bg-green   hover:text-green-dark hover:bg-green-lighter font-body py-4 px-6 sl:py-4 sl:px-6 s:py-2 s:px-2 text-white rounded focus:outline-none ']"
   >
@@ -33,15 +32,6 @@ export default {
     url: String,
     regular: Boolean,
     isLoading: Boolean
-  },
-  methods: {
-    forward() {
-      if (this.url) {
-        window.location.href = this.url;
-      } else {
-        null;
-      }
-    }
   }
 };
 </script>
