@@ -9,7 +9,7 @@ storiesOf('Badge', module)
             template: '<Badge success>Order delivered</Badge>'
         }
     })
-    .add('Warning ', () => {
+    .add('Orange ', () => {
         return {
             components: { Badge },
 
