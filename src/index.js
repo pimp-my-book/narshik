@@ -11,6 +11,7 @@ import SecondaryButton from './components/buttons/SecondaryButton.vue'
 import LinkButton from './components/buttons/LinkButton.vue'
 import SmallCard from './components/cards/SmallCard.vue'
 import Alert from './components/modals/Alert.vue'
+import Badge from './components/badges/Badge.vue'
 
 const Components = {
     DisplayXLarge,
@@ -23,7 +24,8 @@ const Components = {
     PrimaryButton,
     LinkButton,
     SmallCard,
-    Alert
+    Alert,
+    Badge
 }
 Object.keys(Components).forEach(name => {
     Vue.component(name, Components[name])
