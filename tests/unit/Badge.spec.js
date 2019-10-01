@@ -7,9 +7,11 @@ describe('<Badge/>', () => {
     test('It renders the text message', () => {
         const { getByText } = render(Badge, {
             slots: {
-                'text me'
-    }
+                message: 'text me'
+            }
         })
+
+        expect(getByText('text me'))
     })
 
     test('It renders the correct colour', {
