@@ -6,20 +6,20 @@ storiesOf('Badge', module)
     .add('Green', () => {
         return {
             components: { Badge },
-            template: '<Badge success>Order delivered</Badge>'
+            template: '<Badge green>Order delivered</Badge>'
         }
     })
     .add('Orange ', () => {
         return {
             components: { Badge },
 
-            template: '<Badge warning>Order delivered</Badge>'
+            template: '<Badge orange>Sourcing Book</Badge>'
         }
     })
     .add('Error ', () => {
         return {
             components: { Badge },
 
-            template: '<Badge>Order delivered</Badge>'
+            template: '<Badge>Order recieved</Badge>'
         }
     })
