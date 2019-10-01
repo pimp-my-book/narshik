@@ -5,7 +5,11 @@ afterEach(cleanup)
 
 describe('<Badge/>', () => {
     test('It renders the text message', () => {
-
+        const { getByText } = render(Badge, {
+            slots: {
+                'text me'
+    }
+        })
     })
 
     test('It renders the correct colour', {
