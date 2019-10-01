@@ -14,7 +14,12 @@ describe('<Badge/>', () => {
         expect(getByText('text me'))
     })
 
-    test('It renders the correct colour', {
+    test('It renders the green colour', () => {
+        const { findAllByLabelText } = render(Badge, {
+            props: { success: true }
+        })
 
+        expect(findAllByLabelText('bg-green'))
     })
+
 })
