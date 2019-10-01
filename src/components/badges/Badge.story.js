@@ -6,6 +6,6 @@ storiesOf('Badge', module)
     .add('Green', () => {
         return {
             components: { Badge },
-            template: '<Badge/>'
+            template: '<Badge>Order delivered</Badge>'
         }
     })
