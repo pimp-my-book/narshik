@@ -1,6 +1,6 @@
 <template>
   <b-tabs>
-    <b-tab-item label="hello">hello</b-tab-item>
+    <b-tab-item class="text-green" label="hello">hello</b-tab-item>
   </b-tabs>
 </template>
 <script>
@@ -16,3 +16,9 @@ export default {
   }
 };
 </script>
+<style lang="scss">
+@import "~bulma/sass/utilities/_all";
+
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+</style>
