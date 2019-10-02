@@ -2,7 +2,7 @@ import Vue from 'vue'
 import { storiesOf } from '@storybook/vue'
 import Tab from './Tab.vue'
 
-storiesOf('Alert', module)
+storiesOf('Tabs', module)
     .add('Success', () => {
         return {
             components: { Tab },
