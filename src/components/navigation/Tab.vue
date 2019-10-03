@@ -9,7 +9,7 @@
       </b-tab-item>
     </div>
     <div v-else>
-      <b-tab-item class="font-body" label="hello">
+      <b-tab-item class="font-body" :label="tabHeadingOne">
         <slot></slot>
       </b-tab-item>
     </div>
