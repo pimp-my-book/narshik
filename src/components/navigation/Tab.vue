@@ -5,7 +5,7 @@
         <slot name="tabOne"></slot>
       </b-tab-item>
       <b-tab-item class="font-body" label="Tab 2">
-        <slot name="tabeTwo"></slot>
+        <slot name="tabTwo"></slot>
       </b-tab-item>
     </div>
     <div v-else>
