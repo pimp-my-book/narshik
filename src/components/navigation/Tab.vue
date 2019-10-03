@@ -13,6 +13,9 @@ export default {
   name: "Tab",
   components: {
     Tabs
+  },
+  props: {
+    numOfTabs: Int
   }
 };
 </script>
