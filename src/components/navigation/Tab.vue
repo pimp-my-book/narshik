@@ -1,6 +1,18 @@
 <template>
   <b-tabs>
-    <b-tab-item class="font-body" label="hello">hello</b-tab-item>
+    <div>
+      <b-tab-item class="font-body" label="Tab 1">
+        <slot></slot>
+      </b-tab-item>
+      <b-tab-item class="font-body" label="Tab 2">
+        <slot></slot>
+      </b-tab-item>
+    </div>
+    <div>
+      <b-tab-item class="font-body" label="hello">
+        <slot></slot>
+      </b-tab-item>
+    </div>
   </b-tabs>
 </template>
 <script>
