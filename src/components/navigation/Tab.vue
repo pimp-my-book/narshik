@@ -26,11 +26,6 @@ export default {
   components: {
     Tabs
   },
-  data() {
-    return {
-      numOfTabs: 0
-    };
-  },
   props: {
     numOfTabs: String,
     tabHeadingOne: String,

@@ -30,9 +30,7 @@ describe('<Tab/>', () => {
             props: {
                 tabHeadingOne: headingOne,
                 tabHeadingTwo: headingTwo,
-            },
-            data: {
-                numOfTabs: 2
+                numOfTabs: '2'
             },
             slots: {
                 tabOne: 'I am designed this way',
