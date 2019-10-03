@@ -6,7 +6,7 @@ storiesOf('Badge', module)
     .add('Green', () => {
         return {
             components: { Badge },
-            template: '<Badge green>Order delivered</Badge>'
+            template: '<Badge green><template v-slot:text>Order delivered</template></Badge>'
         }
     })
     .add('Orange ', () => {
