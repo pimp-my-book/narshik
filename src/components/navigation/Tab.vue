@@ -15,7 +15,9 @@ export default {
     Tabs
   },
   props: {
-    numOfTabs: Int
+    numOfTabs: Number,
+    tabHeadingOne: String,
+    tabHeadingTwo: String
   }
 };
 </script>
