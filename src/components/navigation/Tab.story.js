@@ -7,7 +7,7 @@ storiesOf('Tabs', module)
         return {
             components: { Tab },
 
-            template: '<Tab numOfTabs="2" tabHeadingOne="tab 1" tabHeadingTwo="Tab 2"><template v-slot:tabOne>hello</template><template v-slot:tabTwo>hello2</template></Tab>'
+            template: '<Tab twoTabs tabHeadingOne="tab 1" tabHeadingTwo="Tab 2"><template v-slot:tabOne>hello</template><template v-slot:tabTwo>hello2</template></Tab>'
         }
     })
     .add('One tab', () => {
