@@ -46,6 +46,10 @@ export default {
   border-bottom: 5px solid;
 }
 
+.tabs li a:hover {
+  border-bottom-color: #4eca5d;
+}
+
 span {
   font-family: Poppins;
 }
