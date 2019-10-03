@@ -8,7 +8,7 @@ describe('<Tab/>', () => {
         const headingOne = "Art"
         const headingTwo = "Music"
 
-        const { getTextBy } = render(Tab, {
+        const { queryAllByText } = render(Tab, {
             props: {
                 tabHeadingOne: headingOne,
                 tabHeadingTwo: headingTwo
@@ -18,7 +18,7 @@ describe('<Tab/>', () => {
             }
         })
 
-        expect(getByText('I am designed this way'))
+        expect(queryAllByText('I am designed this way'))
     })
 
 
@@ -26,7 +26,7 @@ describe('<Tab/>', () => {
         const headingOne = "Art"
         const headingTwo = "Music"
 
-        const { getTextBy, getByLabelText } = render(Tab, {
+        const { getTextBy, queryAllByLabelText } = render(Tab, {
             props: {
                 tabHeadingOne: headingOne,
                 tabHeadingTwo: headingTwo,
@@ -39,7 +39,7 @@ describe('<Tab/>', () => {
         })
     })
 
-    fireEvent.click(getByLabelText('tab item1'))
+    fireEvent.click(queryAllByLabelText('tab item1'))
     expect(getByText('Fame wont get you high like this'))
 
 })
