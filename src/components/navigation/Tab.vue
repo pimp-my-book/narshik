@@ -16,7 +16,7 @@ export default {
   }
 };
 </script>
-<style lang="scss">
+<style lang="scss" >
 @import "../../assets/tailwind.css";
 @import "~bulma/sass/utilities/_all";
 
@@ -24,7 +24,11 @@ export default {
 @import "~buefy/src/scss/buefy";
 
 .tabs li.is-active a {
-  border-bottom-color: red;
-  color: red;
+  border-bottom-color: #4eca5d;
+  color: #4eca5d;
+}
+
+span {
+  font-family: Poppins;
 }
 </style>
