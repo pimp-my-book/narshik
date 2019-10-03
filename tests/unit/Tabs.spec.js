@@ -1,4 +1,4 @@
-import { render, fireEvent, cleanup, getByText, getByLabelText } from '@testing-library/vue'
+import { render, fireEvent, cleanup } from '@testing-library/vue'
 import Tab from '../../src/components/navigation/Tab'
 
 afterEach(cleanup)
@@ -30,6 +30,8 @@ describe('<Tab/>', () => {
             props: {
                 tabHeadingOne: headingOne,
                 tabHeadingTwo: headingTwo,
+            },
+            data: {
                 numOfTabs: 2
             },
             slots: {
