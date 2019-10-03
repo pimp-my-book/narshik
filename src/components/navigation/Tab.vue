@@ -1,6 +1,6 @@
 <template>
   <b-tabs>
-    <b-tab-item class="text-green" label="hello">hello</b-tab-item>
+    <b-tab-item class="font-body" label="hello">hello</b-tab-item>
   </b-tabs>
 </template>
 <script>
@@ -17,8 +17,14 @@ export default {
 };
 </script>
 <style lang="scss">
+@import "../../assets/tailwind.css";
 @import "~bulma/sass/utilities/_all";
 
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
+
+.tabs li.is-active a {
+  border-bottom-color: red;
+  color: red;
+}
 </style>
