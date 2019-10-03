@@ -3,7 +3,12 @@ import Tab from '../../src/components/navigation/Tabs'
 
 afterEach(cleanup)
 describe('<Tab/>', () => {
-    test('It renders the selected tab', () => {
+    test('It renders the content in the tab', () => {
+
+    })
+
+
+    test('You are able to select another tab', () => {
 
     })
 })
