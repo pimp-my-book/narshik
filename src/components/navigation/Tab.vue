@@ -2,10 +2,10 @@
   <b-tabs>
     <div v-if="numOfTabs = 2">
       <b-tab-item class="font-body" label="Tab 1">
-        <slot></slot>
+        <slot name="tabOne"></slot>
       </b-tab-item>
       <b-tab-item class="font-body" label="Tab 2">
-        <slot></slot>
+        <slot name="tabeTwo"></slot>
       </b-tab-item>
     </div>
     <div v-else>

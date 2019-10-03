@@ -6,7 +6,7 @@ storiesOf('Tabs', module)
     .add('Two tabs', () => {
         return {
             components: { Tab },
-            template: '<Tab numOfTabs=2 />'
+            template: '<Tab numOfTabs=2><div>hello</div><div>hello2</div></Tab>'
         }
     })
     .add('One tab', () => {
