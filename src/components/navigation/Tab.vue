@@ -49,4 +49,10 @@ export default {
 span {
   font-family: Poppins;
 }
+
+.tabs ul {
+  border-bottom-color: none;
+  border-bottom-style: none;
+  border-bottom-width: none;
+}
 </style>
