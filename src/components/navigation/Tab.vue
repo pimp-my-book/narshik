@@ -26,6 +26,7 @@ export default {
 .tabs li.is-active a {
   border-bottom-color: #4eca5d;
   color: #4eca5d;
+  border-bottom: 5px solid;
 }
 
 span {
