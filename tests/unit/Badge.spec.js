@@ -5,13 +5,13 @@ afterEach(cleanup)
 
 describe('<Badge/>', () => {
     test('It renders the text message', () => {
-        const { getByText } = render(Badge, {
+        const { queryAllByText } = render(Badge, {
             slots: {
                 message: 'text me'
             }
         })
 
-        expect(getByText('text me'))
+        expect(queryAllByText('text me'))
     })
 
     test('It renders the green colour', () => {

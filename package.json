@@ -1,8 +1,6 @@
 {
   "name": "narshik",
-
-  "version": "0.1.25",
-
+  "version": "0.2.0",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -21,8 +19,11 @@
     "*.js"
   ],
   "dependencies": {
+    "buefy": "^0.8.4",
     "core-js": "^2.6.5",
+    "node-sass": "^4.12.0",
     "postcss-import": "^12.0.1",
+    "sass-loader": "^8.0.0",
     "vue": "^2.6.10"
   },
   "devDependencies": {
