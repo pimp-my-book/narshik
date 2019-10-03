@@ -1,6 +1,6 @@
 <template>
   <b-tabs aria-label="tab component">
-    <div v-if="numOfTabs === 2">
+    <div v-if="numOfTabs = '2' ">
       <b-tab-item class="font-body" :label="tabHeadingOne" aria-label="tab item1">
         <slot name="tabOne"></slot>
       </b-tab-item>
@@ -32,7 +32,7 @@ export default {
     };
   },
   props: {
-    // numOfTabs: Number,
+    numOfTabs: String,
     tabHeadingOne: String,
     tabHeadingTwo: String
   }
