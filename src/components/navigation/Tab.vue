@@ -1,6 +1,6 @@
 <template>
   <b-tabs>
-    <div v-if="numOfTabs === 2">
+    <div v-if="numOfTabs = 2">
       <b-tab-item class="font-body" label="Tab 1">
         <slot></slot>
       </b-tab-item>
