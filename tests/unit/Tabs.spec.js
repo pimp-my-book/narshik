@@ -1,5 +1,5 @@
 import { render, fireEvent, cleanup, getByText, getByLabelText } from '@testing-library/vue'
-import Tab from '../../src/components/navigation/Tabs'
+import Tab from '../../src/components/navigation/Tab'
 
 afterEach(cleanup)
 describe('<Tab/>', () => {
