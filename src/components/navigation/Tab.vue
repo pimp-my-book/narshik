@@ -1,15 +1,15 @@
 <template>
-  <b-tabs>
+  <b-tabs aria-label="tab component">
     <div v-if="numOfTabs = 2">
-      <b-tab-item class="font-body" :label="tabHeadingOne">
+      <b-tab-item class="font-body" :label="tabHeadingOne" aria-label="tab item1">
         <slot name="tabOne"></slot>
       </b-tab-item>
-      <b-tab-item class="font-body" :label="tabHeadingTwo">
+      <b-tab-item class="font-body" :label="tabHeadingTwo" aria-label="tab item2">
         <slot name="tabTwo"></slot>
       </b-tab-item>
     </div>
     <div v-else>
-      <b-tab-item class="font-body" :label="tabHeadingOne">
+      <b-tab-item class="font-body" :label="tabHeadingOne" aria-label="tab item1">
         <slot></slot>
       </b-tab-item>
     </div>
