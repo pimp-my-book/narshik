@@ -13,13 +13,13 @@ storiesOf('Badge', module)
         return {
             components: { Badge },
 
-            template: '<Badge orange>Sourcing Book</Badge>'
+            template: '<Badge orange><template v-slot:text>Sourcing Book</template></Badge>'
         }
     })
     .add('Error ', () => {
         return {
             components: { Badge },
 
-            template: '<Badge>Order recieved</Badge>'
+            template: '<Badge><template v-slot:text>Order recieved</template></Badge>'
         }
     })
