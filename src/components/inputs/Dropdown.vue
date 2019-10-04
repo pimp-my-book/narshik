@@ -1,5 +1,5 @@
 <template>
-  <select aria-label="dropdown">
+  <select class="bg-grey-lighter rounded-px px-4 py-1" aria-label="dropdown">
     <slot></slot>
   </select>
 </template>
