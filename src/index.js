@@ -13,6 +13,7 @@ import SmallCard from './components/cards/SmallCard.vue'
 import Alert from './components/modals/Alert.vue'
 import Badge from './components/badges/Badge.vue'
 import Tab from './components/navigation/Tab.vue'
+import Dropdown from './components/inputs/Dropdown.vue'
 
 const Components = {
     DisplayXLarge,
@@ -27,7 +28,8 @@ const Components = {
     SmallCard,
     Alert,
     Badge,
-    Tab
+    Tab,
+    Dropdown
 }
 Object.keys(Components).forEach(name => {
     Vue.component(name, Components[name])
