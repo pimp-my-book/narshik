@@ -7,9 +7,11 @@ storiesOf('Dropdown', module)
         return {
             components: { Dropdown },
             template: `<Dropdown>
+            <template v-slot:dropdown-content>
             <option>Choose..</option>
-                        <option>Cage The Elephant</option>
-                        <option>Interpol</option>
+            <option>Cage The Elephant</option>
+            <option>Interpol</option>
+            </template>
                         </Dropdown>`
         }
     })
