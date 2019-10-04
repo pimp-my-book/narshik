@@ -5,7 +5,17 @@ afterEach(cleanup)
 
 describe('<Dropdown/>', () => {
     test('It renders options in the dropdown list', () => {
+        const slotContent = `<option>Choose..</option>
+<option>Cage The Elephant</option>
+<option>Interpol</option>`
 
+        const { queryByText } = render(Dropdown, {
+            slots: {
+                dropdownContent: slotContent
+            }
+        })
+
+        expect(queryByText('Cage The Elephant'))
     })
 
     test('It allows you to select an item in the options', () => {
