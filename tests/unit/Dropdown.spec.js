@@ -19,6 +19,17 @@ describe('<Dropdown/>', () => {
     })
 
     test('It allows you to select an item in the options', () => {
+        const slotContent = `<option>Choose..</option>
+        <option>Cage The Elephant</option>
+        <option>Interpol</option>`
 
+        const { getByLabelText, getByDisplayValue } = render(Dropdown, {]
+            slots: {
+                dropdownContent: slotContent
+            }
+        })
+
+        fireEvent.select(getByLabelText('dropdown'), { target: { value: 'Interpol' } })
+        expect(getByDisplayValue('Interpol'))
     })
 })
