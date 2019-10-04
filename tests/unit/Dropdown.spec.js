@@ -23,7 +23,7 @@ describe('<Dropdown/>', () => {
         <option>Cage The Elephant</option>
         <option>Interpol</option>`
 
-        const { getByLabelText, getByDisplayValue } = render(Dropdown, {]
+        const { getByLabelText, getByDisplayValue } = render(Dropdown, {
             slots: {
                 dropdownContent: slotContent
             }
