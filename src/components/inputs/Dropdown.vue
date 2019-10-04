@@ -1,6 +1,6 @@
 <template>
   <select class="font-body bg-grey-lighter rounded-px px-5 py-1" aria-label="dropdown">
-    <slot name="dropdown-content"></slot>
+    <slot name="dropdownContent"></slot>
   </select>
 </template>
 <script>
