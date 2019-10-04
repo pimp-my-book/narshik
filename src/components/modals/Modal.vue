@@ -11,6 +11,8 @@
 export default {
   name: "Modal"
 };
+
+//https://alligator.io/vuejs/vue-modal-component/
 </script>
 <style scoped>
 @import "../../assets/tailwind.css";
