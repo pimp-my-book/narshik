@@ -1,4 +1,8 @@
-<template></template>
+<template>
+  <select aria-label="dropdown">
+    <slot></slot>
+  </select>
+</template>
 <script>
 export default {
   name: "Dropdown"
