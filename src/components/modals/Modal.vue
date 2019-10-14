@@ -4,20 +4,19 @@
       <!-- -->
 
       <!-- Header -->
-      <header class="p-5 felx">
-        <slot name="header">
-          <span>&times;</span>
-        </slot>
+      <header class="flex">
+        <slot name="header"></slot>
+        <span class>&times;</span>
       </header>
       <!--End of header -->
 
       <!-- Body -->
-      <section>
+      <section class="relative">
         <slot name="body"></slot>
         <!--end of body -->
       </section>
       <!-- footer-->
-      <footer class="p-5 felx">
+      <footer class="p-5 flex justify-end">
         <slot name="footer"></slot>
       </footer>
       <!-- end of footer-->
