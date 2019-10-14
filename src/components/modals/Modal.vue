@@ -1,10 +1,10 @@
 <template>
   <div class="fixed top-0 right-0 bottom-0 left-0 flex justify-center align-center">
-    <div>
+    <div class="bg-white flex flex-col">
       <!-- -->
 
       <!-- Header -->
-      <header>
+      <header class="p-5 felx">
         <slot name="header">
           <span>&times;</span>
         </slot>
@@ -20,8 +20,8 @@
 export default {
   name: "Modal",
   methods: {
-    close(){
-      this.$emit('close')
+    close() {
+      this.$emit("close");
     }
   }
 };
