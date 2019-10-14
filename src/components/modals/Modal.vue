@@ -11,8 +11,13 @@
       </header>
       <!--End of header -->
 
+      <!-- Body -->
       <slot name="body"></slot>
+      <!--end of body -->
+
+      <!-- footer-->
       <slot name="footer"></slot>
+      <!-- end of footer-->
     </div>
   </div>
 </template>
