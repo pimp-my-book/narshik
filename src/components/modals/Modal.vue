@@ -6,7 +6,7 @@
       <!-- Header -->
       <header class="flex">
         <slot name="header"></slot>
-        <span class>&times;</span>
+        <span @click="close" class="cursor-pointer">&times;</span>
       </header>
       <!--End of header -->
 
