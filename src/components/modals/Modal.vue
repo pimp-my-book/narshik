@@ -12,11 +12,14 @@
       <!--End of header -->
 
       <!-- Body -->
-      <slot name="body"></slot>
-      <!--end of body -->
-
+      <section>
+        <slot name="body"></slot>
+        <!--end of body -->
+      </section>
       <!-- footer-->
-      <slot name="footer"></slot>
+      <footer class="p-5 felx">
+        <slot name="footer"></slot>
+      </footer>
       <!-- end of footer-->
     </div>
   </div>
