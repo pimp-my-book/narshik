@@ -13,6 +13,9 @@ storiesOf('Modal', module)
             <template v-slot:body>
             This is the modal's body
             </template>
+            <template v-slot:footer>
+            this is the modal's footer
+            </template>
             </Modal>
             `
         }
