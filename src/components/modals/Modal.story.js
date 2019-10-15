@@ -2,11 +2,13 @@ import Vue from 'vue'
 import { storiesOf } from '@storybook/vue'
 import Modal from './Modal.vue'
 import PrimaryButton from '../buttons/PrimaryButton.vue'
+import DisplaySmall from '../typography/DisplaySmall.vue'
+import DisplayLarge from '../typography/DisplayLarge.vue'
 
 storiesOf('Modal', module)
     .add('Simple example', () => {
         return {
-            components: { Modal, PrimaryButton },
+            components: { Modal, PrimaryButton, DisplayLarge, DisplaySmall },
             data: () => {
 
                 return {
