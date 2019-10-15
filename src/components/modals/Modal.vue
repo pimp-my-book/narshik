@@ -16,7 +16,7 @@
         <!--end of body -->
       </section>
       <!-- footer-->
-      <footer class="p-5 flex justify-end">
+      <footer class="p-5 flex mt-32">
         <slot name="footer"></slot>
       </footer>
       <!-- end of footer-->
