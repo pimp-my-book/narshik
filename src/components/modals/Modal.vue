@@ -27,7 +27,7 @@
 export default {
   name: "Modal",
   methods: {
-    close() {
+    close(event) {
       this.$emit("close");
     }
   }

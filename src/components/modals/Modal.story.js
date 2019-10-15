@@ -7,9 +7,11 @@ storiesOf('Modal', module)
     .add('Simple example', () => {
         return {
             components: { Modal, PrimaryButton },
-            data: {
+            data: () => {
 
-                isModalVisible: false
+                return {
+                    isModalVisible: false
+                }
             },
             methods: {
                 showModal() {
@@ -21,11 +23,13 @@ storiesOf('Modal', module)
             }
             ,
             template: `
+            <div>
             <PrimaryButton
             text="open modal"
+            @click.native="showModal"
             />
             
-            <Modal>
+            <Modal v-show="isModalVisible" @close="closeModal">
             <template v-slot:header>
             Hello
             </template>
@@ -36,6 +40,7 @@ storiesOf('Modal', module)
             this is the modal's footer
             </template>
             </Modal>
+            </div>
             `
         }
     })
