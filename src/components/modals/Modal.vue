@@ -1,6 +1,6 @@
 <template>
   <div class="fixed top-0 right-0 bottom-0 left-0 flex justify-center align-center bg-white">
-    <div class="bg-white flex flex-col rounded shadow-lg h-350 w-400 border border-green">
+    <div class="bg-white flex flex-col rounded shadow-lg h-350 w-400">
       <!-- -->
 
       <!-- Header -->
