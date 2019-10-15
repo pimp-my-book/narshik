@@ -24,7 +24,5 @@ describe('<Modal/>', () => {
 
     })
 
-    test('It closes the modal', () => {
 
-    })
 })
