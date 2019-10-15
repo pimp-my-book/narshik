@@ -4,9 +4,9 @@
       <!-- -->
 
       <!-- Header -->
-      <header class="flex">
+      <header class="flex justify-between p-2">
         <slot name="header"></slot>
-        <span @click="close" class="cursor-pointer">&times;</span>
+        <span @click="close" class="cursor-pointer pr-2">&times;</span>
       </header>
       <!--End of header -->
 
