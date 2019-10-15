@@ -11,7 +11,7 @@
       <!--End of header -->
 
       <!-- Body -->
-      <section class="relative">
+      <section class="relative p-3">
         <slot name="body"></slot>
         <!--end of body -->
       </section>
