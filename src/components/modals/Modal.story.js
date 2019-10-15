@@ -1,0 +1,55 @@
+import Vue from 'vue'
+import { storiesOf } from '@storybook/vue'
+import Modal from './Modal.vue'
+import PrimaryButton from '../buttons/PrimaryButton.vue'
+import DisplaySmall from '../typography/DisplaySmall.vue'
+import DisplayLarge from '../typography/DisplayLarge.vue'
+
+storiesOf('Modal', module)
+    .add('Simple example', () => {
+        return {
+            components: { Modal, PrimaryButton, DisplayLarge, DisplaySmall },
+            data: () => {
+
+                return {
+                    isModalVisible: false
+                }
+            },
+            methods: {
+                showModal() {
+                    this.isModalVisible = true
+                },
+                closeModal() {
+                    this.isModalVisible = false
+                }
+            }
+            ,
+            template: `
+            <div>
+            <PrimaryButton
+            text="open modal"
+            @click.native="showModal"
+            />
+            
+            <Modal v-show="isModalVisible" @close="closeModal">
+            <template v-slot:header>
+            <DisplayLarge
+            text="Hello from the modal"
+            />
+            </template>
+            <template v-slot:body>
+            <DisplaySmall
+            text="This is the modal's body"
+            />
+            </template>
+            <template v-slot:footer>
+            <DisplaySmall
+            text=" this is the modal's footer"
+            />
+           
+            </template>
+            </Modal>
+            </div>
+            `
+        }
+    })
