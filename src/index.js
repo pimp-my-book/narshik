@@ -14,6 +14,7 @@ import Alert from './components/modals/Alert.vue'
 import Badge from './components/badges/Badge.vue'
 import Tab from './components/navigation/Tab.vue'
 import Dropdown from './components/inputs/Dropdown.vue'
+import Modal from './components/modals/Modal.vue'
 
 const Components = {
     DisplayXLarge,
@@ -29,7 +30,8 @@ const Components = {
     Alert,
     Badge,
     Tab,
-    Dropdown
+    Dropdown,
+    Modal
 }
 Object.keys(Components).forEach(name => {
     Vue.component(name, Components[name])
