@@ -33,13 +33,20 @@ storiesOf('Modal', module)
             
             <Modal v-show="isModalVisible" @close="closeModal">
             <template v-slot:header>
-            Hello
+            <DisplayLarge
+            text="Hello from the modal"
+            />
             </template>
             <template v-slot:body>
-            This is the modal's body
+            <DisplaySmall
+            text="This is the modal's body"
+            />
             </template>
             <template v-slot:footer>
-            this is the modal's footer
+            <DisplaySmall
+            text=" this is the modal's footer"
+            />
+           
             </template>
             </Modal>
             </div>
