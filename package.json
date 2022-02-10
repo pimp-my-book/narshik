@@ -21,7 +21,7 @@
   "dependencies": {
     "buefy": "^0.8.4",
     "core-js": "^2.6.5",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "postcss-import": "^12.0.1",
     "sass-loader": "^8.0.0",
     "vue": "^2.6.10"
